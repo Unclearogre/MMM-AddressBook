@@ -1,6 +1,17 @@
 # MMM-AddressBook
 This is a module to display an Address Book type listing.  It can be used as a simple address book or for any sort of data that can be fit into such a layout.
 
+I (Uncle Roger) use it for:
+* Immediate Family (Addresses, Phone Numbers, E-mail addresses)
+* Extended Famliy
+* Medical Providers (Doctors, Dentists, etc., in case of emergency)
+* Medicines taken (again, in case of emergency)
+* Travel Memberships (Hotel, airline, rental car info)
+* Subscriptions (login info, websites, etc. for Netflix, Britbox, Spotify, etc.)
+* Utilities (Contact info, account numbers)
+* Political Representatives (Contact info to try and stem the rise of fascism)
+
+The possibilities, however, are endless.
 
 ## How to use
 1. Clone this repo into your Magic Mirrors modules directory with the following command:

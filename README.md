@@ -102,7 +102,80 @@ Additional formats can be added in the css file to layout your entries however y
 }
 ```
 
-## Sample Configuration
+## Sample Configuration - Two Columns
+```
+// Immediate Family        
+        {
+            module: 'MMM-AddressBook',
+            position: 'top_right',
+            header: 'Immediate Family',
+            config: {
+                columnGap: '40px',
+                elements: [
+                    { name: 'Name',              format: { entryheader: true } },
+                    { name: 'HomeAddress1',      format: { indented: true } },
+                    { name: 'HomeAddress2',      format: { indented: true } },
+                    { name: 'HomeCityStateZip',  format: { indented: true } },
+                    { name: 'PhoneHome',         format: { indented: true } },
+                    { name: 'PhoneWork',         format: { indented: true } },
+                    { name: 'PhoneCell',         format: { indented: true } },
+                    { name: 'EmailHome',         format: { indented: true } },
+                ],
+                entries: [
+                    {
+                        'Name':             'John Doe',
+                        'HomeAddress1':     '123 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneHome':        '1.555.555.4663 (Home)',
+                        'PhoneWork':        '1.555.555.8675 (Work)',
+                        'PhoneCell':        '1.555.555.2355 (Cell)',
+                        'EmailHome':        'JohnDoe@example.com'
+                    },
+                    {
+                        'Name':             'Jane Doe',
+                        'HomeAddress1':     '123 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneHome':        '1.555.555.4663 (Home)',
+                        'PhoneCell':        '1.555.555.2355 (Cell)',
+                        'EmailHome':        'JaneDoe@example.com'
+                    },
+                    {
+                        'Name':             'Billy Doe',
+                        'HomeAddress1':     '123 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneCell':        '1.555.555.2355 (Cell)',
+                        'EmailHome':        'BillyDoe@example.com'
+                    },
+                    {
+                        'Name':             'Susie Doe',
+                        'HomeAddress1':     '123 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneCell':        '1.555.555.2355 (Cell)',
+                        'EmailHome':        'SusieDoe@example.com'
+                    },
+                    {
+                        'Name':             'Timmy Doe',
+                        'HomeAddress1':     '123 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneCell':        '1.555.555.2355 (Cell)',
+                        'EmailHome':        'TimmyDoe@example.com'
+                    },
+                    {
+                        'Name':             'Grandpa Joe',
+                        'HomeAddress1':     '456 Sesame Street',
+                        'HomeCityStateZip': 'Anytown, AA  12345',
+                        'PhoneHome':        '1.555.555.4663 (Home)',
+                        'EmailHome':        'GrandpaJoe@example.com'
+                    },
+                ],
+            }
+        },
+```
+<img width="380" height="420" alt="MMM-AddressBook - Sample 2" src="https://github.com/user-attachments/assets/3d5c92b7-c5b9-4e12-bfe3-88f04dbc52fc" />
+
+
+
+## Sample Configuration - Single Column
 ```
         {
             module: 'MMM-AddressBook',

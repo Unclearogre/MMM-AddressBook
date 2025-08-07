@@ -1,0 +1,138 @@
+/*==============================================================*
+ *																*
+ *             Sample CSS file for MMM-AddressBook              *
+ *																*
+ * Module Name: MMM-AddressBook									*
+ * Author:		Roger Sinasohn									*
+ * Date:		2025-07-31										*
+ * Description:	Sample CSS file for the MMM-AddressBook module  *
+ *              with basic styles defined.                      *
+ *																*
+ *																*
+ *==============================================================*/
+
+/* MMM-AddressBook.css */
+
+
+/* formatClassMap definitions */
+
+/*==============================================================*
+ * For each style you want to create, add an entry here to link *
+ * the element definition to the style.  The format is:         *
+ *                                                              *
+ *   --formatClassMap-<format>: <selector>;                     *
+ *                                                              *
+ * where <format> is the name of the format used in the element *
+ * definition in config.js and <selector> is a class name as    *
+ * defined below.                                               *
+ *==============================================================*/
+:root {
+    --formatClassMap-bold: bold;
+    --formatClassMap-italic: italic;
+    --formatClassMap-underline: underline;
+    --formatClassMap-indented: indented;
+    --formatClassMap-entryheader: entryheader;
+    --formatClassMap-subentry: subentry;
+    --formatClassMap-catheader: catheader;
+    --formatClassMap-jobtitle: jobtitle;
+    --formatClassMap-location: location;
+
+    --numColumns: 2;
+    --columnGap: 10px;
+}
+
+
+/*--- Add your styles here -------------------------------------*/
+
+
+
+
+
+
+/*--- Do not change these --------------------------------------*/
+.directory-entries {
+    break-inside: avoid; /* Prevent entries from breaking across columns */
+}
+
+.directory-entry-wrapper {
+    break-inside: avoid; /* Prevent entry wrappers from breaking across columns */
+}
+/*--------------------------------------------------------------*/
+
+
+
+// Format the module header here:
+header {
+    text-align:     left !important;
+    font-size:      1em;
+    font-weight:    bold;
+}
+
+
+.left-aligned {
+    text-align: left !important;
+}
+
+.directory-entry {
+    margin-bottom: 10px;
+}
+
+
+/*--- Basic stylings -------------------------------------------*/
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+  text-decoration-line: underline;
+}
+
+.indented {
+    margin-left: 10px;
+    text-align:  left !important;
+    font-size:   .8em;
+    line-height: 1em;
+
+}
+
+.subentry {
+    margin-left: 18px;
+    text-align:  left !important;
+    font-size:   .8em;
+    line-height: 1em;
+}
+
+
+.catheader {
+    margin-top:  15px;
+    font-style: italic;
+    font-size:  .9em;
+    text-decoration: underline;
+}
+
+
+
+.entryheader {
+    margin-top:  10px;
+    font-weight: bold;
+    text-align:  left !important;
+}
+
+
+.module.MMM-AddressBook {
+    text-align:  left !important;
+}
+
+.jobtitle {
+    color: red;
+    font-size: 1.4em;
+}
+
+.location {
+    margin-top:  6px;
+}
